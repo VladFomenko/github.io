@@ -1,0 +1,23 @@
+const identity = str => str;
+const length = str => str.length;
+
+
+const addDigits = (num) => {
+  if (num < 10){
+    return num;
+  }
+  const sum = (num) =>{
+    let str = String(num);
+    let result = 0;
+    if(num > 9){
+      for(let i = 0; i < length(str); i++){
+        num = result + Number(str[i]);
+        return num;
+      }
+    }
+    if(num < 9){
+    return num;
+    }
+  }
+};
+addDigits(10);
